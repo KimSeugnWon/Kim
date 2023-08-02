@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+
+    <style>
+      h3{
+        background-color: yellow;
+        /* inline은 width나 height, margin 등*/
+        /* 적용되지 않는 스타일들이 많아서 다루기 불편하다.*/
+        display: inline-block;
+      }
+
+      img{
+        /* 화면의 한 줄을 다 차지한다.*/
+        /* 실제로 차지하는 영역 외에는 마진으로 채워져 있다.*/
+        /* inline인 태그에 대해 굳이 block으로 바꾸기 보다는*/
+        /* div 태그에 감싸주는 편이다.*/
+        display: block;
+      }
+
+      #stano{
+        display: none;
+          /* 화면상에 존재하지 않도록 함*/
+          /* display: none;*/
+
+          /* 화면상에 보이지는 않지만 영역은 남아 있다.*/
+          /*visibility: hidden;*/
+          /*투명하게 만들어서 화면에 보이지는 않지만 존재함*/
+          opacity: 0;
+          visibility: hidden;
+      }
+
+      #stamp:hover{
+       opacity: 1;
+       
+      }
+
+    </style>
+</head>
+<body>
+    <!-- 각 태그별로 display 기본 설정이 다름-->
+    <!-- div,h,p 등은 한줄을 다 차지(display: block)-->
+    <!-- input, img, span 등은 본인의 영역만 차지(dispaly: inline)-->
+    <h3>2023 8월 2일</h3>
+    <h3>날씨: 폭염</h3>
+    <h2>연준이의 일기</h2>
+
+    <div>
+    <img src="https://cdn-mart.baemin.com/sellergoods/list/58fd1cd6-9e40-4a9b-8850-edabfbdb6284.jpg" alt="">
+    오늘 처음 민트초코 치킨을 먹어보려고했다. 크크크크크 민초는 합법적 음식이라구
+</div>
+
+<div>
+    오늘은 민초치킨을 먹었는데 완존 맛있었다. 여윽시 치킨은 민초취킨이쥐~~
+</div>
+
+<img id="stamp" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFTBuTGdWJ3fLNJtHMfeIqaEsa_p415Sc3sQ&usqp=CAU" alt="">
+<h4>나도 민초치킨 먹을줄 아는데..</h4>
+</body>
+</html>
